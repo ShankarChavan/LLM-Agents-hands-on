@@ -1,5 +1,6 @@
 import os
 from crewai import Agent, Task, Crew, Process
+
 from langchain_openai import ChatOpenAI
 
 llm=ChatOpenAI(
@@ -13,13 +14,13 @@ def create_crewai_setup():
     product_manager = Agent(
         role="Product Manager",
         goal=f"""Suggest product design for a given feature""",
-        backstory="""You're a Former engineer turner product manager,
+        backstory="""You're a Former engineer turned product manager,
         who leverages her knack for innovation to lead product development 
         and transforming ideas into market-ready solutions. Ex Tesla, Microsoft employee.""",
         verbose=True,
         allow_delegation=False,
         llm=llm,
-        max_iter=10,
+        max_iter=5,
 
     )
     
@@ -32,7 +33,7 @@ def create_crewai_setup():
         verbose=True,
         allow_delegation=False,
         llm=llm,
-        max_iter=10
+        max_iter=5
     )
     
     project_lead = Agent(
@@ -42,7 +43,7 @@ def create_crewai_setup():
         verbose=True,
         allow_delegation=False,
         llm=llm,
-        max_iter=10
+        max_iter=5,
     )
 
 
