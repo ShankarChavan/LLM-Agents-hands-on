@@ -59,8 +59,33 @@ In a MAS, agents communicate and negotiate with each other to coordinate their a
 We  will see three use-cases of building which will connect with LLM model and give the final report of task completion.
 
 ## 1. Text-to-SQL agents
+Here is task is to make agent intearct with SQL tables and extract answers using plain text query and which is then converted into SQL by the agents.
+
+We are using following framework:
+- Autogen for agents
+- spider for SQL 
 
 ## 2. Business Development agents
-## 3. Tech-team agents
 
+Here we have task is of identifying next product to be launched.This is a multi-agent system
+
+- Market-Reserach analyst
+- Technology expert
+- Business Consultant
+
+These agents performs the reserach and comes back with analysis report for product
+
+We are using following framework:
+- CrewAI
+
+## 3. Tech-team agents
+In this example we have 3 agents who does the  brainstorming for new feature development within an existing product.
+
+Following are agents built in this:
+- Product manager
+- Developer
+- Project Lead
+
+We are using following framework:
+- CrewAI
 
