@@ -1,0 +1,4 @@
+crewai==0.1.16
+langchain
+gradio
+duckduckgo-search
