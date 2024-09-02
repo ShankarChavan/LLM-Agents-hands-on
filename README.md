@@ -69,7 +69,7 @@ We are using following framework:
 
 Here we have task is of identifying next product to be launched.This is a multi-agent system
 
-- Market-Reserach analyst
+- Market-Research analyst
 - Technology expert
 - Business Consultant
 
